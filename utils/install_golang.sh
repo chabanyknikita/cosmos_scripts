@@ -1,5 +1,3 @@
-#!/bin/bash
-
 while getopts v: flag; do
   case "${flag}" in
   v) VER=$OPTARG ;;
@@ -7,7 +5,7 @@ while getopts v: flag; do
   esac
 done
 
-version=${VER:-"1.19.7"}
+version=${VER:-"1.20"}
 
 curl -L -# -O "https://golang.org/dl/go$version.linux-amd64.tar.gz"
 sudo rm -rf /usr/local/go

@@ -28,7 +28,7 @@ rm -rf defund
 git clone https://github.com/defund-labs/defund.git
 cd defund || return
 git checkout v0.2.6
-sudo make install
+make install
 defundd version # 0.2.6
 
 defundd config chain-id orbit-alpha-1

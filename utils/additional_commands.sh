@@ -1,6 +1,6 @@
-NC="\e[0m"           # no color
-CYAN="\033[0;32m" # cyan color
-RED="\e[1m\e[1;91m" # red color
+NC="\e[0m"           # 
+GREEN="\033[0;32m" 
+RED="\e[1m\e[1;91m" 
 
 function printLogo {
   bash <(curl -s https://raw.githubusercontent.com/chabanyknikita/cosmos_scripts/main/utils/mirror_reflection_logo.sh)
@@ -10,8 +10,8 @@ function printLine {
   echo "---------------------------------------------------------------------------------------"
 }
 
-function printCyan {
-  echo -e "${CYAN}${1}${NC}"
+function printGREEN {
+  echo -e "${GREEN}${1}${NC}"
 }
 
 function printRed {

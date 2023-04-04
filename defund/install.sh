@@ -54,6 +54,7 @@ printCyan "5. Changing port if you have more one node or enter 0 for default por
 source <(curl -s https://raw.githubusercontent.com/chabanyknikita/cosmos_scripts/main/utils/change_port.sh) BINARY_HOME
 
 printCyan "5. Starting service and synchronization..." && sleep 1
+
 sudo tee /etc/systemd/system/defundd.service > /dev/null << EOF
 [Unit]
 Description=defund-testnet node

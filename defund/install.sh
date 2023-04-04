@@ -23,12 +23,13 @@ source <(curl -s https://raw.githubusercontent.com/chabanyknikita/cosmos_scripts
 
 printCyan "4. Building binaries..." && sleep 1
 
-cd $HOME
+cd || return
 rm -rf defund
 git clone https://github.com/defund-labs/defund.git
-cd defund
+cd defund || return
 git checkout v0.2.6
 make install
+defundd version # 0.2.6
 
 defundd config chain-id orbit-alpha-1
 defundd init "$NODE_MONIKER" --chain-id orbit-alpha-1

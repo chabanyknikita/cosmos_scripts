@@ -10,7 +10,7 @@ sudo apt install -y make gcc jq curl git lz4 build-essential chrony unzip
 
 printCyan "3. Installing go..." && sleep 1
 if ! [ -x "$(command -v go)" ]; then
-  source <(curl -s "https://raw.githubusercontent.com/nodejumper-org/cosmos-scripts/master/utils/go_install.sh")
+  source <(curl -s "https://raw.githubusercontent.com/chabanyknikita/cosmos_scripts/main/utils/install_golang.sh")
   source .bash_profile
 fi
 

@@ -1,5 +1,5 @@
 NC="\e[0m"           # no color
-CYAN="\e[1m\e[1;96m" # cyan color
+CYAN="\033[0;32m" # cyan color
 RED="\e[1m\e[1;91m" # red color
 
 function printLogo {
